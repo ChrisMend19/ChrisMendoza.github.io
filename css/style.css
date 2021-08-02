@@ -13,8 +13,8 @@
 
     --clr-light: #fff;
     --clr-dark: #303030;
-    --crl-accent:#6AAD15;
-    --crl-accent2: #F0C31F;
+    --crl-accent:#1d58da;
+    --crl-accent2: #9c9c9c;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -153,7 +153,9 @@ header {
 }
 
 .logo {
-    max-width: 200px;
+    padding-left: 10px;
+    padding-top: 10px;
+    max-width: 300px;
 }
 
 .nav {
@@ -298,7 +300,7 @@ header {
 }
 
 .section_title--description {
-    padding: 0 2em 0 2em;
+    text-align: center;
     
 }
 

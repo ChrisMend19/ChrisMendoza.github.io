@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chris Mendoza's Portfolio</title>
+        <link rel ="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrO+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+        <!--Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+
+        Pro:300,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/ebc987179b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="assets/Chris-2.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"> <a href="index.html" class="nav__link">Home</a></li>
+                    <!--<li class="nav__item"> <a href="#services" class="nav__link">Services</a></li>-->
+                    <li class="nav__item"> <a href="index.html#about" class="nav__link">About</a></li>              
+                    <li class="nav__item"> <a href="index.html#games" class="nav__link">Game Development</a></li>
+                    <li class="nav__item"> <a href="index.html#work" class="nav__link">Projects</a></li>  
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Intro -->
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                <strong>Minecraft Tile Survival</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">
+            
+            a version of minecraft that's free
+            </p>
+            <img src="assets/203Project.png" alt="" class="intro__img">
+        </section>
+
+        <a class="section_title section__title--button" href="https://github.com/ChrisMend19/Minecraft-Tile-Survival-203.git">
+                        <i class="fas fa-code-branch"></i> Game Code </a></li> 
+
+        <!-- Portfolio Item -->
+
+        <div class = "portfolio-item-individual">
+            <p>
+            Minecraft tile survival is a adventure game where you play as steve and your
+            goal to collect all the diamonds before defeated by the mobs. The game consists of 3 differnt
+            game-modes which increase the speed of the game to make the game more challenging.
+            </p>
+            <img src = "assets/minecraft2.png" alt = "">
+            <p>
+            The game intially starts with the standard three mobs, 
+            however by clicking on the purple portals it triggers a world event to add more functionality to the game.
+            When triggered you can gain the ability to teleport through the portals, at the cost of more dangerous enemies. Mouse
+            Pressed Function also comes in to play when selecting your game mode and whether you'd like to restart the game.
+            Another aspect of code is the enemies utilize A-star pathing algorithm for their tracking, enabling them to trap 
+            your character resulting in a defeat. Each enemy is apart of the abstract class 'Entity', which allows for easy
+            creation of enemies, in a similar manner to the Factory Method design pattern.
+            </p>
+            <img src = "assets/minecraftScreens.png" alt = "">
+            
+
+        </div>
+
+
+
+        <!--Footer-->
+        <footer class="footer">
+            <a href="mailto:mendozachris132@gmail.com" class="footer__link">mendozachris132@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/ChrisMend19">
+                        <i class="fab fa-github"></i></a></li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/christopher-henry-mendoza/">
+                        <i class="fab fa-linkedin"></i></a></li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com/ChrisMend15">
+                        <i class="fab fa-twitter"></i></a></li>
+                
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>
+

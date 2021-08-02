@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chris Mendoza's Portfolio</title>
+        <link rel ="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrO+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+        <!--Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+
+        Pro:300,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/ebc987179b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="assets/Chris-2.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"> <a href="index.html" class="nav__link">Home</a></li>
+                    <!--<li class="nav__item"> <a href="#services" class="nav__link">Services</a></li>-->
+                    <li class="nav__item"> <a href="index.html#about" class="nav__link">About</a></li>              
+                    <li class="nav__item"> <a href="index.html#games" class="nav__link">Game Development</a></li>
+                    <li class="nav__item"> <a href="index.html#work" class="nav__link">Projects</a></li>  
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Intro -->
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                <strong>Thumb Simulator</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp decode and execute ARM Thumb instructions
+            </p>
+            <img src="assets/ThumbSim/thumbsim1.png" alt="" class="intro__img">
+        </section>
+
+        <!--
+        <a class="section_title section__title--button" href="https://github.com/ChrisMend19/Terminal-Arcade.git">
+                        <i class="fas fa-code-branch"></i> Game Code </a></li> 
+        -->
+
+        <!-- Portfolio Item -->
+        
+        <div class = "portfolio-item-individual">
+            <p>
+            In my computer architecture we were tasked to build an ARM Thumb simulator. We were given
+            the base code of the simulator and were tasked to implement several methods to enable the
+            simulator to interpret and execute ARM thumb instructions. Our simulator is able to handle
+            a subset of the ARM Thumb instruction set. The program takes in as input several lines of 
+            instruction represented in binary and outputs the ARM instructions translated from the binary code. 
+            </p>
+            <img src = "assets/ThumbSim/thumbsim2.png" alt = "" class = "portfolio-item-individual-img">
+            <p>
+            Each type of instruction has a different procedure to decoding as different bits are used uniquely
+            based on the instruction type. For this reason we used the official ARM v7 Reference manual to
+            figure out how to decipher each instruction type. For each line of binary instruction, we decode
+            by associating their opcodes with their string equivalent and print out their instruction and
+            registers used. After each instruction is decoded, next we fetch that instruction and update the
+            registers used, data memory, and the program counter. This process is repeated for each instruction of the inputted file.
+            </p>
+            <p>
+            The Instructions that are supported included including push, pop, sub(sp minus immediate), sub(immediate), sub(register),
+            add(sp plus register), add(sp plus immediate), add(register), add(immediate), cmp(register), cmp(immediate), mov(immediate),
+            mov(register), str, strb, stmia, ldr, ldrb, ldr(literal), ldmia, b(unconditional), bcc, bcs, beq, bge, bhi, ble, bls, blt,
+            bne, bl, lsl(immediate), neg(also called rsb).
+            </p>
+            <img src = "assets/ThumbSim/thumbsim3.png" alt = "" class = "portfolio-item-individual-img">
+            <p>
+            After executing each line of instruction, we then collected several runtime statistics on the instruction set and the cache
+            performance. For cache performance, we were using a 256-byte direct-mapped cache with several different block sizes to 
+            determine which one has the greatest hit rate. 
+            </p>
+            <img src = "assets/ThumbSim/thumbsim5.png" alt = "" class = "portfolio-item-individual-img">
+            <p>
+            Completing this project gave me and my group a better understanding how CPUs decode and execute instructions and a deeper understanding
+            on what computer architects have to keep in mind when designing instruction sets.
+            </p>
+
+        </div>
+
+
+
+        <!--Footer-->
+        <footer class="footer">
+            <a href="mailto:mendozachris132@gmail.com" class="footer__link">mendozachris132@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/ChrisMend19">
+                        <i class="fab fa-github"></i></a></li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/christopher-henry-mendoza/">
+                        <i class="fab fa-linkedin"></i></a></li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com/ChrisMend15">
+                        <i class="fab fa-twitter"></i></a></li>
+                
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chris Mendoza's Portfolio</title>
+        <link rel ="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrO+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+        <!--Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+
+        Pro:300,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/ebc987179b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="assets/Chris-2.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"> <a href="index.html" class="nav__link">Home</a></li>
+                    <!--<li class="nav__item"> <a href="#services" class="nav__link">Services</a></li>-->
+                    <li class="nav__item"> <a href="index.html#about" class="nav__link">About</a></li>              
+                    <li class="nav__item"> <a href="index.html#games" class="nav__link">Game Development</a></li>
+                    <li class="nav__item"> <a href="index.html#work" class="nav__link">Projects</a></li>   
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Intro -->
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                <strong>File Manager</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">
+            &nbsp &nbsp &nbsp &nbsp  move files at ease
+            </p>
+            <img src="assets/FileManager/fm1.png" alt="" class="intro__img">
+        </section>
+
+        <a class="section_title section__title--button" href="https://github.com/ChrisMend19/FileManager">
+                        <i class="fas fa-code-branch"></i> Code </a></li> 
+
+        <!-- Portfolio Item -->
+        
+        <div class = "portfolio-item-individual">
+            <p>
+            Inspired by the macOS finder application, I wanted to create a program that enables users
+            to quickly relocate files within their directories. The built-in macOS finder lacked the
+            feature of moving files to other folders quickly. For someone who moves files around often,
+            I often was left having to open two instances of the finder application and drag files
+            from several different folders to their respective destination. My file manager program
+            solves this issue.
+            </p>
+            <img src = "assets/FileManager/fm13.png" alt = "" class = "portfolio-item-individual-img">
+            <p>
+            Upon running this program, the files listed in your current directory are shown. From there you
+            can navigate through previous directories, traverse through your current directories that are
+            shown, or begin selecting files to move around. The file manager previews your selected files
+            below and offers two different previews: showing files or showing directories chosen. 
+            And lastly with the bottom two buttons you are able to select files to remove from the preview
+            or move all the files to their respective chosen directory.
+            </p>
+            <img src = "assets/FileManager/fm11.png" alt = "" class = "portfolio-item-individual-img">
+            <p>
+            From this project, I got a better grasp on python’s libraries, including tkinter,  ttkthemes, and os,
+            and what it takes to create a functional graphical user interface. Although python’s tkinter lacks
+            modern styling, I was able to learn aspects of creating a functional interface.
+            </p>
+
+        </div>
+
+
+
+        <!--Footer-->
+        <footer class="footer">
+            <a href="mailto:mendozachris132@gmail.com" class="footer__link">mendozachris132@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/ChrisMend19">
+                        <i class="fab fa-github"></i></a></li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/christopher-henry-mendoza/">
+                        <i class="fab fa-linkedin"></i></a></li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com/ChrisMend15">
+                        <i class="fab fa-twitter"></i></a></li>
+                
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>
+

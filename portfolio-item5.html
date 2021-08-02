@@ -29,7 +29,7 @@
                     <!--<li class="nav__item"> <a href="#services" class="nav__link">Services</a></li>-->
                     <li class="nav__item"> <a href="index.html#about" class="nav__link">About</a></li>              
                     <li class="nav__item"> <a href="index.html#games" class="nav__link">Game Development</a></li>
-                    <li class="nav__item"> <a href="index.html#work" class="nav__link">Projects</a></li>  
+                    <li class="nav__item"> <a href="index.html#work" class="nav__link">Projects</a></li>   
                 </ul>
             </nav>
         </header>
@@ -37,38 +37,43 @@
         <!-- Intro -->
         <section class="intro">
             <h1 class="section__title section__title--intro">
-                <strong>Minecraft Tile Survival</strong>
+                <strong>File Manager</strong>
             </h1>
             <p class="section__subtitle section__subtitle--intro">
-            
-            a version of minecraft that's free
+            &nbsp &nbsp &nbsp &nbsp  move files at ease
             </p>
-            <img src="assets/203Project.png" alt="" class="intro__img">
+            <img src="assets/FileManager/fm1.png" alt="" class="intro__img">
         </section>
 
-        <a class="section_title section__title--button" href="https://github.com/ChrisMend19/Minecraft-Tile-Survival-203.git">
-                        <i class="fas fa-code-branch"></i> Game Code </a></li> 
+        <a class="section_title section__title--button" href="https://github.com/ChrisMend19/FileManager">
+                        <i class="fas fa-code-branch"></i> Code </a></li> 
 
         <!-- Portfolio Item -->
-
+        
         <div class = "portfolio-item-individual">
             <p>
-            Minecraft tile survival is a adventure game where you play as steve and your
-            goal to collect all the diamonds before defeated by the mobs. The game consists of 3 differnt
-            game-modes which increase the speed of the game to make the game more challenging.
+            Inspired by the macOS finder application, I wanted to create a program that enables users
+            to quickly relocate files within their directories. The built-in macOS finder lacked the
+            feature of moving files to other folders quickly. For someone who moves files around often,
+            I often was left having to open two instances of the finder application and drag files
+            from several different folders to their respective destination. My file manager program
+            solves this issue.
             </p>
-            <img src = "assets/minecraft2.png" alt = "">
+            <img src = "assets/FileManager/fm13.png" alt = "" class = "portfolio-item-individual-img">
             <p>
-            The game intially starts with the standard three mobs, 
-            however by clicking on the purple portals it triggers a world event to add more functionality to the game.
-            When triggered you can gain the ability to teleport through the portals, at the cost of more dangerous enemies. Mouse
-            Pressed Function also comes in to play when selecting your game mode and whether you'd like to restart the game.
-            Another aspect of code is the enemies utilize A-star pathing algorithm for their tracking, enabling them to trap 
-            your character resulting in a defeat. Each enemy is apart of the abstract class 'Entity', which allows for easy
-            creation of enemies, in a similar manner to the Factory Method design pattern.
+            Upon running this program, the files listed in your current directory are shown. From there you
+            can navigate through previous directories, traverse through your current directories that are
+            shown, or begin selecting files to move around. The file manager previews your selected files
+            below and offers two different previews: showing files or showing directories chosen. 
+            And lastly with the bottom two buttons you are able to select files to remove from the preview
+            or move all the files to their respective chosen directory.
             </p>
-            <img src = "assets/minecraftScreens.png" alt = "">
-            
+            <img src = "assets/FileManager/fm11.png" alt = "" class = "portfolio-item-individual-img">
+            <p>
+            From this project, I got a better grasp on python’s libraries, including tkinter,  ttkthemes, and os,
+            and what it takes to create a functional graphical user interface. Although python’s tkinter lacks
+            modern styling, I was able to learn aspects of creating a functional interface.
+            </p>
 
         </div>
 
